@@ -40,7 +40,7 @@ namespace SkysCodeFirstMultipleAdds
 
 
 
-            var app = new HockeyApplication();
+            var app = new HockeyApplication(s);
             app.Run();
             //Console.WriteLine("Hello World!");
         }
