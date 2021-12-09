@@ -8,7 +8,9 @@ namespace SkysCodeFirstMultipleAdds.Data
         public void MigrateAndSeed(ApplicationDbContext context)
         {
             context.Database.Migrate();
+
             SeedTeams(context);
+            context.SaveChanges();
         }
 
         private void SeedTeams(ApplicationDbContext context)
